@@ -1,6 +1,6 @@
-15:05:01 **** Incremental Build of configuration Debug for project Program1_henryMarshall ****
+15:44:18 **** Incremental Build of configuration Debug for project Program1_henryMarshall ****
 make all 
 make: Nothing to be done for 'all'.
 
-15:05:02 Build Finished. 0 errors, 0 warnings. (took 228ms)
+15:44:19 Build Finished. 0 errors, 0 warnings. (took 293ms)
 
