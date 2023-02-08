@@ -2716,3 +2716,203 @@ Finished building target: Program1_henryMarshall
 11:52:42 **** Incremental Build of configuration Debug for project Program1_henryMarshall ****
 make all 
 make: Nothing to be done for 'all'.
+14:58:41 **** Build of configuration Debug for project Program1_henryMarshall ****
+make all 
+make: Nothing to be done for 'all'.
+14:59:20 **** Incremental Build of configuration Debug for project Program1_henryMarshall ****
+make all 
+make: Nothing to be done for 'all'.
+14:59:28 **** Incremental Build of configuration Debug for project Program1_henryMarshall ****
+make all 
+make: Nothing to be done for 'all'.
+14:59:38 **** Build of configuration Debug for project Program2_henryMarshall ****
+make all 
+Building file: ../Program2.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Program2.d" -MT"Program2.o" -o "Program2.o" "../Program2.c"
+../Program2.c: In function ‘main’:
+../Program2.c:9:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    9 |         printf("Enter 0 or 1 to STOP\n");
+      |         ^~~~~~
+../Program2.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | /*
+../Program2.c:9:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    9 |         printf("Enter 0 or 1 to STOP\n");
+      |         ^~~~~~
+../Program2.c:9:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../Program2.c:14:27: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   14 |                 scoreIn = scanf();
+      |                           ^~~~~
+../Program2.c:14:27: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+../Program2.c:14:27: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+../Program2.c:14:27: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+../Program2.c:14:27: error: too few arguments to function ‘scanf’
+make: *** [subdir.mk:20: Program2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:00:06 **** Incremental Build of configuration Debug for project Program1_henryMarshall ****
+make all 
+make: Nothing to be done for 'all'.
+15:00:16 **** Incremental Build of configuration Debug for project Program2_henryMarshall ****
+make all 
+Building file: ../Program2.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Program2.d" -MT"Program2.o" -o "Program2.o" "../Program2.c"
+../Program2.c: In function ‘main’:
+../Program2.c:9:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    9 |         printf("Enter 0 or 1 to STOP\n");
+      |         ^~~~~~
+../Program2.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | /*
+../Program2.c:9:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    9 |         printf("Enter 0 or 1 to STOP\n");
+      |         ^~~~~~
+../Program2.c:9:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../Program2.c:14:27: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   14 |                 scoreIn = scanf();
+      |                           ^~~~~
+../Program2.c:14:27: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+../Program2.c:14:27: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+../Program2.c:14:27: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+../Program2.c:14:27: error: too few arguments to function ‘scanf’
+make: *** [subdir.mk:20: Program2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:04:43 **** Incremental Build of configuration Debug for project Program2_henryMarshall ****
+make all 
+Building file: ../Program2.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Program2.d" -MT"Program2.o" -o "Program2.o" "../Program2.c"
+../Program2.c: In function ‘main’:
+../Program2.c:9:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    9 |         printf("Enter 0 or 1 to STOP\n");
+      |         ^~~~~~
+../Program2.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | /*
+../Program2.c:9:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    9 |         printf("Enter 0 or 1 to STOP\n");
+      |         ^~~~~~
+../Program2.c:9:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../Program2.c:14:17: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   14 |                 scanf("%d", &scoreIn);
+      |                 ^~~~~
+../Program2.c:14:17: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+../Program2.c:14:17: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+../Program2.c:14:17: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+Finished building: ../Program2.c
+ 
+Building target: Program2_henryMarshall
+Invoking: Cross GCC Linker
+gcc  -o "Program2_henryMarshall" ./Program2.o   
+Finished building target: Program2_henryMarshall
+ 
+15:04:55 **** Incremental Build of configuration Debug for project Program2_henryMarshall ****
+make all 
+make: Nothing to be done for 'all'.
+15:05:01 **** Incremental Build of configuration Debug for project Program1_henryMarshall ****
+make all 
+make: Nothing to be done for 'all'.
+15:05:33 **** Incremental Build of configuration Debug for project Program2_henryMarshall ****
+make all 
+Building file: ../Program2.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Program2.d" -MT"Program2.o" -o "Program2.o" "../Program2.c"
+../Program2.c: In function ‘main’:
+../Program2.c:9:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    9 |         printf("Enter 0 or 1 to STOP\n");
+      |         ^~~~~~
+../Program2.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | /*
+../Program2.c:9:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    9 |         printf("Enter 0 or 1 to STOP\n");
+      |         ^~~~~~
+../Program2.c:9:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../Program2.c:14:17: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   14 |                 scanf("%d", &scoreIn);
+      |                 ^~~~~
+../Program2.c:14:17: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+../Program2.c:14:17: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+../Program2.c:14:17: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+Finished building: ../Program2.c
+ 
+Building target: Program2_henryMarshall
+Invoking: Cross GCC Linker
+gcc  -o "Program2_henryMarshall" ./Program2.o   
+Finished building target: Program2_henryMarshall
+ 
+15:24:26 **** Incremental Build of configuration Debug for project Program2_henryMarshall ****
+make all 
+Building file: ../Program2.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Program2.d" -MT"Program2.o" -o "Program2.o" "../Program2.c"
+../Program2.c: In function ‘displayScores’:
+../Program2.c:9:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    9 |         printf("%d TD + 2pt, ", TP);
+      |         ^~~~~~
+../Program2.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | /*
+../Program2.c:9:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    9 |         printf("%d TD + 2pt, ", TP);
+      |         ^~~~~~
+../Program2.c:9:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../Program2.c: In function ‘main’:
+../Program2.c:17:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   17 |         printf("Enter 0 or 1 to STOP\n");
+      |         ^~~~~~
+../Program2.c:17:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../Program2.c:23:17: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   23 |                 scanf("%d", &scoreIn);
+      |                 ^~~~~
+../Program2.c:23:17: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+../Program2.c:23:17: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+../Program2.c:23:17: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+Finished building: ../Program2.c
+ 
+Building target: Program2_henryMarshall
+Invoking: Cross GCC Linker
+gcc  -o "Program2_henryMarshall" ./Program2.o   
+Finished building target: Program2_henryMarshall
+ 
+15:24:30 **** Incremental Build of configuration Debug for project Program2_henryMarshall ****
+make all 
+make: Nothing to be done for 'all'.
+15:24:54 **** Incremental Build of configuration Debug for project Program2_henryMarshall ****
+make all 
+Building file: ../Program2.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Program2.d" -MT"Program2.o" -o "Program2.o" "../Program2.c"
+../Program2.c: In function ‘displayScores’:
+../Program2.c:9:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    9 |         printf("%d TD + 2pt, ", TP);
+      |         ^~~~~~
+../Program2.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | /*
+../Program2.c:9:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    9 |         printf("%d TD + 2pt, ", TP);
+      |         ^~~~~~
+../Program2.c:9:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../Program2.c: In function ‘main’:
+../Program2.c:17:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   17 |         printf("Enter 0 or 1 to STOP\n");
+      |         ^~~~~~
+../Program2.c:17:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../Program2.c:23:17: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   23 |                 scanf("%d", &scoreIn);
+      |                 ^~~~~
+../Program2.c:23:17: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+../Program2.c:23:17: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+../Program2.c:23:17: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+Finished building: ../Program2.c
+ 
+Building target: Program2_henryMarshall
+Invoking: Cross GCC Linker
+gcc  -o "Program2_henryMarshall" ./Program2.o   
+Finished building target: Program2_henryMarshall
+ 
+15:24:58 **** Incremental Build of configuration Debug for project Program2_henryMarshall ****
+make all 
+make: Nothing to be done for 'all'.
