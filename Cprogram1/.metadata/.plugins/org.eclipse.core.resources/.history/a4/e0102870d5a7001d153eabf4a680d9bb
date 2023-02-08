@@ -1,0 +1,154 @@
+/*
+ * Program1.c
+ *
+ *  Created on: Feb 8, 2023
+ *      Author: h232m035
+ */
+
+float salesData[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+
+void printMonth(int monthnum){
+	if (monthnum == 0){
+		printf("January");
+	}
+	else if (monthnum == 1){
+		printf("February");
+	}
+	else if (monthnum == 2){
+		printf("March");
+	}
+	else if (monthnum == 3){
+		printf("April");
+	}
+	else if (monthnum == 4){
+		printf("May");
+	}
+	else if (monthnum == 5){
+		printf("June");
+	}
+	else if (monthnum == 6){
+		printf("July");
+	}
+	else if (monthnum == 7){
+		printf("August");
+	}
+	else if (monthnum == 8){
+		printf("September");
+	}
+	else if (monthnum == 9){
+		printf("October");
+	}
+	else if (monthnum == 10){
+		printf("November");
+	}
+	else if (monthnum == 11){
+		printf("December");
+	}
+	else{
+		printf("Invalid month number");
+	}
+}
+
+void maxMonth(float monthData[], int listLength){
+	float mostMoney = monthData[0];
+	int mostIndex = 0;
+	for (int i = 1; i < listLength; i++){
+		if (monthData[i] > mostMoney){
+			mostIndex = i;
+			mostMoney = monthData[i];
+		}
+	}
+	printf("Maximum sales:  %.2f   (", mostMoney);
+	printMonth(mostIndex);
+	printf(")\n");
+}
+
+void minMonth(float monthData[], int listLength){
+	float minMoney = monthData[0];
+	int minIndex = 0;
+	for (int i = 1; i < listLength; i++){
+		if (monthData[i] < minMoney){
+			minIndex = i;
+			minMoney = monthData[i];
+		}
+	}
+	printf("Minimum sales:  %.2f   (", minMoney);
+	printMonth(minIndex);
+	printf(")\n");
+}
+
+void averageSales(float monthData[], int listLength){
+	float total = 0;
+	for (int i = 0; i < listLength; i++){
+		total += monthData[i];
+	}
+	printf("Average Sales:  %.2f\n", total / listLength);
+}
+
+void func0(float monthData[], int listLength){
+	printf("  Month            Sales\n");
+	for (int i = 0; i < listLength; i++){
+		printMonth(i);
+		printf("            %.2f\n", monthData[i]);
+	}
+}
+
+void func1(float monthData[], int listLength){
+	minMonth(monthData, listLength);
+	maxMonth(monthData, listLength);
+	averageSales(monthData, listLength);
+}
+
+void func2(float monthData[], int listLength){
+	for (int i = 0; i < 8; i++){
+		printMonth(i);
+		printf("-");
+		printMonth(i + 6);
+		printf("     %.2f\n", 0);
+	}
+}
+
+void func3(float monthData[], int listLength){
+	printf("  Month            Sales\n");
+	float maxUsed = 0;
+	int useMax = 0;
+	int maxmonth = -1;
+	float maxAm = 0;
+	int sorting = 1;
+	while (sorting){
+		maxAm = 0;
+		maxmonth = -1;
+
+		for (int i = 0; i < listLength; i ++){
+			if (!useMax || monthData[i] < maxUsed){
+				//check if this is valid
+				if (maxmonth == -1 || monthData[i] > maxAm){
+					maxAm = monthData[i];
+					maxmonth = i;
+				}
+			}
+		}
+		if (maxmonth == -1){
+			sorting = 0;
+			break;
+		}
+		//print out data
+		printMonth(maxmonth);
+		printf("            %.2f\n", maxAm);
+		//data setup
+		useMax = 1;
+		maxUsed = maxAm;
+	}
+}
+
+int main(){
+	//first, get the 12 inputs for month data
+	for (int i = 0; i < 12; i++){
+		scanf("%f", &salesData[i]);
+	}
+	printf("Monthly sales report for 2022\n\n");
+	func0(salesData, 12);
+	func1(salesData, 12);
+	func2(salesData, 12);
+	func3(salesData, 12);
+}

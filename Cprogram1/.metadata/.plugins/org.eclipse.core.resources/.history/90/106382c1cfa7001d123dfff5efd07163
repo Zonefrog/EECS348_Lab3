@@ -1,0 +1,101 @@
+/*
+ * Program1.c
+ *
+ *  Created on: Feb 8, 2023
+ *      Author: h232m035
+ */
+
+float salesData[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+
+void printMonth(int monthnum){
+	if (monthnum == 0){
+		printf("January");
+	}
+	else if (monthnum == 1){
+		printf("February");
+	}
+	else if (monthnum == 2){
+		printf("March");
+	}
+	else if (monthnum == 3){
+		printf("April");
+	}
+	else if (monthnum == 4){
+		printf("May");
+	}
+	else if (monthnum == 5){
+		printf("June");
+	}
+	else if (monthnum == 6){
+		printf("July");
+	}
+	else if (monthnum == 7){
+		printf("August");
+	}
+	else if (monthnum == 8){
+		printf("September");
+	}
+	else if (monthnum == 9){
+		printf("October");
+	}
+	else if (monthnum == 10){
+		printf("November");
+	}
+	else if (monthnum == 11){
+		printf("December");
+	}
+	else{
+		printf("Invalid month number");
+	}
+}
+
+void maxMonth(float monthData[], int listLength){
+	float mostMoney = monthData[0];
+	int mostIndex = 0;
+	for (int i = 1; i <= listLength; i++){
+		if (monthData[i] > mostMoney){
+			mostIndex = i;
+			mostMoney = monthData[i];
+		}
+	}
+	printf("Maximum sales:  %d   (", mostMoney);
+	printMonth(mostIndex);
+	printf(")\n");
+}
+
+void minMonth(float monthData[], int listLength){
+	float minMoney = monthData[0];
+	int minIndex = 0;
+	for (int i = 1; i <= listLength; i++){
+		if (monthData[i] < minMoney){
+			minIndex = i;
+			minMoney = monthData[i];
+		}
+	}
+	printf("Minimum sales:  %d   (", minMoney);
+	printMonth(minIndex);
+	printf(")\n");
+}
+
+void averageSales(float monthData[], int listLength){
+	float total = 0;
+	for (int i = 0; i < listLength; i++){
+		total += monthData[i];
+	}
+	printf("Average Sales:  %d\n", total / listLength);
+}
+
+void func1(float monthData[], int listLength){
+	minMonth(monthData, listLength);
+	maxMonth(monthData, listLength);
+	averageSales(monthData, listLength);
+}
+
+int main(){
+	//first, get the 12 inputs for month data
+	for (int i = 0; i < 12; i++){
+		scanf("%f", &salesData[i]);
+		printf(9);
+	}
+	func1(salesData, 12);
+}
